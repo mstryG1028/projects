@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  font-family: sans-serif;
+}
+:root {
+  --maincolor: red;
+  --maincolor1: brown;
+}
+
+/* FOR MENUBTN */
+.lines {
+  height: 5px;
+  width: 30px;
+  margin-top: 4px;
+  margin-left: 10px;
+  background-color: white;
+}
+.categorylogobox {
+  height: 35px;
+  width: 30px;
+  background-color: red;
+  display: inline-block;
+}
+.localmenubarbox {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  width: 400px;
+  border: 2px solid;
+}
+.areabox {
+  height: 150px;
+  background-color: red;
+  font-size: 30px;
+}
+.areaname {
+  color: white;
+  text-transform: capitalize;
+  margin-left: 20px;
+  display: inline-block;
+  background-color: red;
+}
+.onlinesite {
+  margin-top: 10px;
+  height: 80px;
+}
+/* .onlinesitebtn{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+    display: inline-block;
+  } */
+.forspace {
+  height: 20px;
+  width: 400px;
+  background-color: rgb(37, 37, 37);
+  display: inline-block;
+}
+.contentbtn {
+  height: 50px;
+  width: 400px;
+  background-color: rgb(61, 59, 59);
+  color: white;
+  text-align: left;
+  border: 1px solid rgb(122, 122, 122);
+  display: inline-block;
+}
+.localmenubarbox p {
+  margin-left: 50px;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: capitalize;
+  background-color: rgb(61, 59, 59);
+}
+.navbar {
+  background-color: var(--maincolor);
+  height: 40px;
+  width: 1340px;
+  display: flex;
+  align-items: center;
+}
+.newsbtn {
+  display: flex;
+  height: 25px;
+  width: 60px;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 950px;
+  background-color: var(--maincolor1);
+  text-decoration: none;
+}
+.selectcity {
+  background-color: var(--maincolor);
+  margin-left: 30px;
+  display: flex;
+  height: 30px;
+  width: 200px;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+.menubtn {
+  background-color: var(--maincolor);
+  margin-left: 15px;
+  height: 30px;
+  width: 50px;
+}
+.buyticketbtn {
+  display: flex;
+  text-transform: capitalize;
+  height: 40px;
+  width: 1320px;
+  background-color: rgb(48, 3, 90);
+  color: white;
+  font-weight: bolder;
+  font-size: 23px;
+  margin-left: 10px;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+.imgbox {
+  margin-left: 70px;
+  margin-top: 10px;
+  background-size: cover;
+  height: 700px;
+}
+h2 {
+  height: 25px;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: capitalize;
+position: relative;
+bottom: 10px;
+}
+.img {
+  
+  display: inline-block;
+  height: 230px;
+  width: 310px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgb(29, 29, 29);
+  
+
+}
+.imgbox img {
+  height: 200px;
+  width: 260px;
+
+;
+}
+
+.otherbox {
+  width: 1330px;
+  background-color: black;
+}
+.other {
+  height: 45px;
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+
+  margin-left: 5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 18px;
+  margin-top: 25px;
+  display: inline-block;
+}
+.otherbtn1:hover {
+  background-color: var(--maincolor);
+  color: white;
+}
+.otherbtn2:hover {
+  background-color: var(--maincolor);
+  color: white;
+}
+
+.otherbtn1 {
+  display: flex;
+  text-transform: capitalize;
+  height: 50px;
+  width: 1330px;
+  background-color: rgb(250, 248, 248);
+  color: black;
+  font-weight: lighter;
+  font-size: 23px;
+  align-items: center;
+  text-align: left;
+  border: none;
+}
+.otherbtn2 {
+  display: flex;
+  text-transform: capitalize;
+  height: 50px;
+  width: 1330px;
+  background-color: rgb(161, 160, 160);
+  color: black;
+  font-weight: lighter;
+  font-size: 23px;
+  border: none;
+  text-align: left;
+  align-items: center;
+}
