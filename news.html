@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        font-family: sans-serif;
+    }
+    :root{
+        --maincolor:red;
+    }
+    .header{
+        height: 40px;
+        width: 1350px;
+        background-color: var(--maincolor);
+        display: flex;
+        align-items: center;
+    }
+    .stationlogo{
+        background-color: var(--maincolor);
+        margin-left: 20px;
+        height: 30px;
+        width: 70px;
+        border: 1px solid;
+        display: block;
+    }
+    .refreshbtn{
+        position:absolute ;
+        background-color: var(--maincolor);
+        margin-left: 1250px;
+        height: 30px;
+        width: 50px;
+        border: 1px solid;
+        display: block;
+        right: 30px;
+        
+    }
+    .refreshbtn img{
+        height: 40px;
+        width: 40px;
+    }
+    .stationlogo img{
+        height: 40px;
+        width: 40px;
+    }
+    span{
+        display: block;
+        position: absolute;
+        background-color: var(--maincolor);
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        left: 110px;
+        height: 20px;
+        width: 50px;
+        text-align: center;
+        align-items: center;
+        top: 8px;
+    }
+    button:hover{
+        background-color: rgb(247, 17, 17);
+    }
+    button{
+        margin-left: 0px;
+        height: 30px;
+        width: 267px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: lighter;
+        border: none;
+        border-top: 1px solid black;
+        color: white;
+        text-transform: uppercase;
+        background-color: var(--maincolor);
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="stationlogo">
+            <img src="stationlogo.jpg">
+        </div>
+        <span>news</span>
+<button class="refreshbtn">
+    <img src="ref.png">
+</button>
+    </div>
+    <div class="linebtn">
+        <button>western</button>
+        <button>central</button>
+        <button>harbour</button>
+        <button>trans</button>
+        <button>urban</button>
+    </div>
+
+    <script>
+        const API_KEY="78bb6fc5af3448708787cee5418fa0cc";
+        const url="https://newsapi.org/v2/everything?q=";
+        window.addEventListener('load',()=>fetchnews("india"))
+        async function fetchnews(query){
+          const res=await fetch(`${url}${query}&apikey=${API_KEY}`);
+        const data=await res.json();
+        console.log(data);
+        }
+      </script>
+  
+</body>
+</html>
