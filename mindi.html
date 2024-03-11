@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news</title>
+    <link rel="stylesheet" href="mind.css">
+  </head>
+  <style>
+   
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="menubtn" onclick="hide()">
+        <!-- <img src="cr1.jpg" height="25px" width="30px" /> -->
+        <div class="categorylogobox" onclick="">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </div>
+      <div class="selectcity">MUMBAI</div>
+      <a class="newsbtn" id="newsbtn" href="news.html">news</a>
+    </div>
+    <div class="localmenubarbox" id="menubox">
+      <div class="areabox">
+        <div class="areaname">mumbai</div>
+        <!-- <div class="onlinesite">
+          <button class="onlinesitebtn"></button>
+          <button class="onlinesitebtn"></button>
+          <button class="onlinesitebtn"></button>
+          <button class="onlinesitebtn"></button>
+        </div> -->
+      </div>
+      <button class="contentbtn"><p>Mumbai</p></button>
+      <button class="contentbtn"><p>Pune</p></button>
+      <div class="forspace"></div>
+      <button class="contentbtn"><p>select language</p></button>
+      <button class="contentbtn"><p>rate us</p></button>
+      <button class="contentbtn"><p>upgrade</p></button>
+      <button class="contentbtn"><p>feedback</p></button>
+      <button class="contentbtn"><p>contact us</p></button>
+      <button class="contentbtn"><p>advertise with us</p></button>
+      <button class="contentbtn"><p>terms & conditions</p></button>
+      <button class="contentbtn"><p>new feature giude</p></button>
+      <button class="contentbtn"><p>version</p></button>
+      <button class="contentbtn"><p>mobond</p></button>
+    </div>
+
+    <button class="buyticketbtn" id="buyticketbtn">buy local ticket</button>
+    <div class="imgbox">
+      <div class="img">
+        <a href="#"><img src="local.jpg" /> </a>
+        <h2>local</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="bus.jpg" />  </a>
+        <h2>bus</h2>
+      
+      </div>
+      
+      <div class="img">
+        <a href=""><img src="express.jpg" /> </a>
+        <h2>express</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="taxi1.jpg" /> </a>
+        <h2>taxi</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="ferry1.png.jpg" /> </a>
+        <h2>ferry</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="metro.jpg" /> </a>
+        <h2>metro</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="auto1.png.jpg" />  </a>
+        <h2>auto</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="images.jpg" /> </a>
+        <h2>welcome</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="auto.png" /> </a>
+        <h2>auto</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="taxi.jpg" /> </a>
+        <h2>welcome</h2>
+      </div>
+      <div class="img">
+        <a href=""><img src="images.jpg" /> </a>
+        <h2>welcome</h2>
+      </div>
+      <div class="img">
+        <a href="localmap.jpg"><img src="map1.jpg" /> </a>
+        <h2>welcome</h2>
+      </div>
+    </div>
+    <div class="otherbox">
+      <div class="other"><h1>other</h1></div>
+      <button class="otherbtn1">land survey map</button>
+      <button class="otherbtn2">mumbai exhibition</button>
+      <button class="otherbtn1">natak- marathi hindi gujrati</button>
+      <button class="otherbtn2">penalty - traffic and railway</button>
+      <button class="otherbtn1">property</button>
+      <button class="otherbtn2">picnic</button>
+      <div class="other"><h1>safety</h1></div>
+      <button class="otherbtn1">emergency contacts</button>
+      <button class="otherbtn2">police station locator</button>
+      <div class="other"><h1>explore mumbai</h1></div>
+      <button class="otherbtn1">mumbai map</button>
+      <button class="otherbtn2" id="travel">how to travel?</button>
+      <button class="otherbtn1">popular places</button>
+      <button class="otherbtn2">shopping</button>
+      <button class="otherbtn1">food and drinks</button>
+      <button class="otherbtn2">hotels</button>
+    </div>
+
+    <script>
+      const menubox = document.getElementById("menubox");
+      var display = 1;
+      function hide() {
+        if (display == 0) {
+          menubox.style.display = "none";
+          display = 1;
+        } else {
+          menubox.style.display = "block";
+          display = 0;
+        }
+      }
+      const booktktbtn = document.getElementById("buyticketbtn");
+      booktktbtn.addEventListener("click", () => {
+        window.open(
+          (url =
+            "https://play.google.com/store/apps/details?id=com.cris.utsmobile&hl=en&gl=US")
+        );
+      });
+      const travelbtn = document.getElementById("travel");
+      travelbtn.addEventListener("click", () => {
+        window.open(
+          (url =
+            "https://www.booking.com/index.en.html?aid=309654;label=holidays-english-en-india-1xOCvXi5ktMcjlFJ8IPLBwS432876511178:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-29738972:lp9150924:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg;ws=&gad_source=1&gclid=EAIaIQobChMI1fHwqvPegwMVySatBh1JaQ4NEAAYAiAAEgIt_fD_BwE")
+        );
+      });
+      const mapbtn = document.getElementById("map");
+      travelbtn.addEventListener("click", () => {
+        window.open();
+      });
+    </script>
+  </body>
+</html>
